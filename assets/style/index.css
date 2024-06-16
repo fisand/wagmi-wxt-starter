@@ -1,0 +1,10 @@
+/* @font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Figtree-VariableFont_wght.ttf');
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}

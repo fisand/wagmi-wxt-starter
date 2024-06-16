@@ -1,10 +1,11 @@
 # WAGMI-WXT Starter
 
-Welcome to the WAGMI-WXT Starter repository! This project is a starter kit to help you get up and running with a WAGMI-based chrome extension.
+Welcome to the WAGMI-WXT Starter repository! This project is a starter kit to help you get up and running with a WAGMI-based Chrome extension. 
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -56,6 +57,27 @@ Ensure you have the following software installed on your machine:
    ```bash
    pnpm run build
    ```
+
+## Project Structure
+
+A brief description of the project structure:
+
+```
+wagmi-wxt-starter/
+├── assets/                 # Assets for the extension
+├── entrypoints/            # Entry points for the application
+├── hooks/                  # Custom React hooks
+├── public/                 # Public assets
+├── .gitignore              # Git ignore file
+├── README.md               # Project documentation
+├── auto-imports.d.ts       # Auto-imported TypeScript definitions
+├── package.json            # Project metadata and dependencies
+├── pnpm-lock.yaml          # Lockfile for pnpm
+├── tsconfig.json           # TypeScript configuration
+├── uno.config.ts           # UnoCSS configuration
+├── vite-env.d.ts           # Vite environment definitions
+└── wxt.config.ts           # WXT-specific configuration
+```
 
 ## Contributing
 

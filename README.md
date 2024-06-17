@@ -23,6 +23,8 @@ Ensure you have the following software installed on your machine:
 - [pnpm](https://pnpm.io/) (version 6 or later)
 - [Git](https://git-scm.com/)
 
+> [Dev issue import for Vite compatibility](https://github.com/MetaMask/providers/pull/331)
+
 ### Installation
 
 1. **Clone the repository:**
@@ -45,14 +47,7 @@ Ensure you have the following software installed on your machine:
    ```bash
    pnpm start
    ```
-
-2. **Open your browser and navigate to:**
-
-   ```
-   http://localhost:3000
-   ```
-
-3. **Build the project for production:**
+2. **Build the project for production:**
 
    ```bash
    pnpm run build

@@ -16,14 +16,15 @@ Welcome to the WAGMI-WXT Starter repository! This project is a starter kit to he
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
+> [!WARNING]
+> [Dev issue with import for Vite compatibility](https://github.com/MetaMask/providers/pull/331)
+
 
 Ensure you have the following software installed on your machine:
 
 - [Node.js](https://nodejs.org/) (version 14 or later)
 - [pnpm](https://pnpm.io/) (version 6 or later)
 - [Git](https://git-scm.com/)
-
-> [Dev issue import for Vite compatibility](https://github.com/MetaMask/providers/pull/331)
 
 ### Installation
 

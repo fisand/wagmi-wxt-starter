@@ -1,0 +1,17 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+deleted file mode 100644
+index f22cc84a9c10cb78b16061e5865a1df9b4031277..0000000000000000000000000000000000000000
+diff --git a/dist/extension-provider/createExternalExtensionProvider.mjs b/dist/extension-provider/createExternalExtensionProvider.mjs
+index f2aa9285d84cd5e25c20f5202437c476cdacc326..105c6346442c412bf09288c1addf50e7c9f3632c 100644
+--- a/dist/extension-provider/createExternalExtensionProvider.mjs
++++ b/dist/extension-provider/createExternalExtensionProvider.mjs
+@@ -1,7 +1,5 @@
+-import $detectbrowser from "detect-browser";
+-const { detect } = $detectbrowser;
+-import $extensionportstream from "extension-port-stream";
+-const { PortDuplexStream: PortStream } = $extensionportstream;
++import { detect } from "detect-browser";
++import { PortDuplexStream as PortStream } from "extension-port-stream";
+ import config from "./external-extension-config.json" assert { type: "json" };
+ import { MetaMaskInpageProviderStreamName } from "../MetaMaskInpageProvider.mjs";
+ import { StreamProvider } from "../StreamProvider.mjs";

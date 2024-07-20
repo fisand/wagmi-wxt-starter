@@ -50,7 +50,6 @@
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^9.2.0",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import-x": "^0.5.2",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "5.1.0-rc-df5f2736-20240712",
@@ -64,7 +63,7 @@
     "unplugin-icons": "^0.19.0",
     "vite-plugin-node-stdlib-browser": "^0.2.1",
     "vite-plugin-pages": "^0.32.2",
-    "wxt": "^0.17.0"
+    "wxt": "^0.18.14"
   },
   "pnpm": {
     "patchedDependencies": {

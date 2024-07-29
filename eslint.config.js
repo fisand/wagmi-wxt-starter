@@ -65,6 +65,7 @@ export default sxzz(
             printWidth: 120,
           },
         ],
+        'perfectionist/sort-imports': 'off',
       },
     },
   ],

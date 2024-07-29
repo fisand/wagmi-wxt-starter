@@ -36,6 +36,21 @@ export default defineConfig({
         },
       }),
     ],
+    build: {
+      rollupOptions: {
+        onLog(level, log, handler) {
+          // ignore rollup warning about 'use client'
+          if (log.message.includes('Module level directives cause errors when bundled')) return
+
+          // ignore sourcemap warning about 'Can't resolve original location of error.'
+          if (log.cause && (log.cause as any).message === `Can't resolve original location of error.`) {
+            return
+          }
+
+          handler(level, log)
+        },
+      },
+    },
   }),
   manifest: {
     permissions: ['storage', 'sidePanel'],

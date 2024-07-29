@@ -17,12 +17,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 > [!WARNING]
-> [Dev issue with import for Vite compatibility](https://github.com/MetaMask/providers/pull/331)
+> ~[Dev issue with import for Vite compatibility](https://github.com/MetaMask/providers/pull/331)~
 
 
 Ensure you have the following software installed on your machine:
 
-- [Node.js](https://nodejs.org/) (version 14 or later)
+- [Node.js](https://nodejs.org/) (version 18 or later)
 - [pnpm](https://pnpm.io/) (version 6 or later)
 - [Git](https://git-scm.com/)
 

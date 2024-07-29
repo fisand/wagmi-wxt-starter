@@ -1,8 +1,8 @@
 import { shorten } from '@did-network/dapp-sdk'
-import { InfoCircledIcon } from '@radix-ui/react-icons'
 import { useAccount } from 'wagmi'
 
-import { cn } from '../../utils'
+import { cn } from '@/utils'
+
 import { Button } from '../ui/button'
 import { WalletModal } from '../web3/WalletModal'
 

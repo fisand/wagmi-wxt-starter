@@ -1,4 +1,3 @@
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import type { ReactNode } from 'react'
 import { useAccount } from 'wagmi'
 
@@ -12,7 +11,6 @@ export const Header = ({ action }: { action?: ReactNode }) => {
       <div className="grid grid-cols-2 m-auto h-full lt-sm:px-4 sm:px-8">
         <div className="flex-col-center items-start">{isConnected && <NetworkSwitcher />}</div>
 
-        
         <div className="flex items-center justify-end">{isConnected && action}</div>
       </div>
     </div>

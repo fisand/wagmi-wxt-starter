@@ -1,6 +1,7 @@
 import { useAccount, useSwitchChain } from 'wagmi'
 
-import { cn } from '../../utils'
+import { cn } from '@/utils'
+
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select'
 
 export function NetworkSwitcher() {

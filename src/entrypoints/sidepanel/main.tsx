@@ -17,5 +17,5 @@ ReactDOM.createRoot(document.querySelector('#root')!).render(
     <QueryClientProvider client={queryClient}>
       <App />
     </QueryClientProvider>
-  </WagmiProvider>
+  </WagmiProvider>,
 )

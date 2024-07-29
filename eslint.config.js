@@ -55,6 +55,18 @@ export default sxzz(
         'import/no-duplicates': 'error',
       },
     },
+    {
+      rules: {
+        'prettier/prettier': [
+          'error',
+          {
+            singleQuote: true,
+            semi: false,
+            printWidth: 120,
+          },
+        ],
+      },
+    },
   ],
   {
     prettier: true,

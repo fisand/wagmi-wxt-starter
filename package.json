@@ -40,11 +40,9 @@
     "wagmi": "^2.8.1"
   },
   "devDependencies": {
-    "@eslint-react/eslint-plugin": "^1.5.16",
     "@iconify-json/line-md": "^1.1.37",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
-    "@sxzz/eslint-config": "^3.16.0",
     "@types/chrome": "^0.0.268",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",

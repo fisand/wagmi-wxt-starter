@@ -31,7 +31,7 @@ export default defineConfig({
         compiler: 'jsx',
         jsx: 'react',
         customCollections: {
-          'op-icons': FileSystemIconLoader(`${resolve(import.meta.dirname, 'src/assets/icons')}/`, svg =>
+          'op-icons': FileSystemIconLoader(`${resolve(__dirname, 'src/assets/icons')}/`, svg =>
             svg.replace(/^<svg /, '<svg fill="currentColor" ')),
         },
       }),

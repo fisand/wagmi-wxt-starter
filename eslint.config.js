@@ -17,6 +17,8 @@ export default defineConfig(
       'react-refresh/only-export-components': 'off',
 
       '@typescript-eslint/no-explicit-any': 'warn',
+
+      'unicorn/prefer-module': 'off',
     },
   },
 )

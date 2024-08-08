@@ -1,5 +1,6 @@
-import react from '@vitejs/plugin-react'
 import { resolve } from 'node:path'
+
+import react from '@vitejs/plugin-react'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
@@ -30,9 +31,8 @@ export default defineConfig({
         compiler: 'jsx',
         jsx: 'react',
         customCollections: {
-          'op-icons': FileSystemIconLoader(`${resolve(__dirname, 'src/assets/icons')}/`, (svg) =>
-            svg.replace(/^<svg /, '<svg fill="currentColor" '),
-          ),
+          'op-icons': FileSystemIconLoader(`${resolve(import.meta.dirname, 'src/assets/icons')}/`, svg =>
+            svg.replace(/^<svg /, '<svg fill="currentColor" ')),
         },
       }),
     ],
@@ -40,7 +40,8 @@ export default defineConfig({
       rollupOptions: {
         onLog(level, log, handler) {
           // ignore rollup warning about 'use client'
-          if (log.message.includes('Module level directives cause errors when bundled')) return
+          if (log.message.includes('Module level directives cause errors when bundled'))
+            return
 
           // ignore sourcemap warning about 'Can't resolve original location of error.'
           if (log.cause && (log.cause as any).message === `Can't resolve original location of error.`) {

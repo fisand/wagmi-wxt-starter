@@ -2,7 +2,7 @@ import { useAccount, useSwitchChain } from 'wagmi'
 
 import { cn } from '@/utils'
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select'
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
 
 export function NetworkSwitcher() {
   const { chains, switchChain, isPending } = useSwitchChain()
@@ -33,8 +33,9 @@ export function NetworkSwitcher() {
         <SelectValue>
           <span className="flex-center">
             {isPending && (
-              <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary"></span>
-            )}{' '}
+              <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary" />
+            )}
+            {' '}
             {isConnected ? chain?.name ?? 'Error Net' : 'Select'}
           </span>
         </SelectValue>
@@ -42,17 +43,20 @@ export function NetworkSwitcher() {
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          {chains.map((x) =>
-            x.id === chain?.id ? null : (
-              <SelectItem value={`${x.id}`} key={x.id} className="">
-                <span className="flex-center">
-                  {isPending && x.id === pendingChainId && (
-                    <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary"></span>
-                  )}{' '}
-                  {x.name}
-                </span>
-              </SelectItem>
-            ),
+          {chains.map(x =>
+            x.id === chain?.id
+              ? null
+              : (
+                  <SelectItem value={`${x.id}`} key={x.id} className="">
+                    <span className="flex-center">
+                      {isPending && x.id === pendingChainId && (
+                        <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary" />
+                      )}
+                      {' '}
+                      {x.name}
+                    </span>
+                  </SelectItem>
+                ),
           )}
         </SelectGroup>
       </SelectContent>

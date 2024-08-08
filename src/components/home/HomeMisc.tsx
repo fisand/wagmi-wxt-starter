@@ -6,7 +6,7 @@ import { cn } from '@/utils'
 import { Button } from '../ui/button'
 import { WalletModal } from '../web3/WalletModal'
 
-export const InitConnect = ({ type }: { type?: 'header' }) => {
+export function InitConnect({ type }: { type?: 'header' }) {
   const { address } = useAccount()
 
   const [show, setShow] = useState(false)
@@ -25,7 +25,7 @@ export const InitConnect = ({ type }: { type?: 'header' }) => {
           )}
         >
           {isLoading ? (
-            <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-white"></span>
+            <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-white" />
           ) : null}
           {address ? shorten(address, 6, 6) : 'Connect Wallet'}
         </Button>

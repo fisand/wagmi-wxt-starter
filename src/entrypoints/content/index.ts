@@ -9,7 +9,6 @@ export default defineContentScript({
     const ui = await createIntegratedUi(ctx, {
       position: 'inline',
       onMount(container) {
-        console.log(container)
         // Define how your UI will be mounted inside the container
         const button = document.createElement('button')
         button.textContent = 'Hello world!'

@@ -62,7 +62,7 @@ export function WalletModal(props: {
             </>
           ) : (
             <div className="flex-col-center">
-              {connectors.map((connector) => (
+              {connectors.map(connector => (
                 <Button
                   key={connector.id}
                   onClick={async () => {

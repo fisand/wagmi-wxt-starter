@@ -5,7 +5,7 @@ import { useAccount } from 'wagmi'
 import { ABI } from '@/constants'
 import { OPEN_ADDRESS } from '@/constants/address'
 
-export const useOpenContract = () => {
+export function useOpenContract() {
   const { chainId } = useAccount()
 
   return useMemo(
@@ -17,7 +17,7 @@ export const useOpenContract = () => {
   )
 }
 
-export const useUSDCContract = (tokenAddress: `0x${string}`) => {
+export function useUSDCContract(tokenAddress: `0x${string}`) {
   return useMemo(
     () => ({
       address: tokenAddress,

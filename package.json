@@ -59,7 +59,7 @@
     "unplugin-icons": "^0.19.0",
     "vite-plugin-node-stdlib-browser": "^0.2.1",
     "vite-plugin-pages": "^0.32.2",
-    "wxt": "^0.18.14"
+    "wxt": "^0.19.4"
   },
   "pnpm": {
     "patchedDependencies": {
